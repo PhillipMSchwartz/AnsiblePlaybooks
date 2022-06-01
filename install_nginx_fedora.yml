@@ -1,0 +1,14 @@
+---
+- name: install and start nginx
+  hosts: WebServers
+  become: yes
+
+  tasks:
+    - name: nginx is present
+       yum:
+         name: nginx
+         state: latest
+    - name: nginx is started
+      service:
+        name: nginx
+        state: started

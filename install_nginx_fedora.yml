@@ -5,9 +5,9 @@
 
   tasks:
     - name: nginx is present
-       yum:
-         name: nginx
-         state: latest
+      yum:
+        name: nginx
+        state: latest
     - name: nginx is started
       service:
         name: nginx

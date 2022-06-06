@@ -1,0 +1,15 @@
+---
+- name: install and start apache
+  hosts: WebServers
+  become: yes
+
+  tasks:
+    - name: apache is present
+       yum:
+         name: httpd
+         state: latest
+    - name: apache is installed
+      service:
+        name: httpd
+        state: started
+        enable: yes

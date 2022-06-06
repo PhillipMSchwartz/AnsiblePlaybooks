@@ -15,21 +15,14 @@
   - name: Create firewall rule for apache service
     firewalld:
       service: http
-      zone: public
-      permanent: yes
-      immediate: yes
-      state: enabled
-  - name: Create port rule for apache service
-    firewalld:
-      port: 80/tcp
-      zone: public
+      zone: FedoraWorkstation
       permanent: yes
       immediate: yes
       state: enabled
   - name: Create firewall rule for apache service
     firewalld:
       service: https
-      zone: public
+      zone: FedoraWorkstation
       permanent: yes
       immediate: yes
       state: enabled

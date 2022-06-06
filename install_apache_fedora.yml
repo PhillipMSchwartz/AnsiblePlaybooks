@@ -5,9 +5,9 @@
 
   tasks:
     - name: apache is present
-       yum:
-         name: httpd
-         state: latest
+      yum:
+        name: httpd
+        state: latest
     - name: apache is installed
       service:
         name: httpd

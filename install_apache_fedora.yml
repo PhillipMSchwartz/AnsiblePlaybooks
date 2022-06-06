@@ -14,7 +14,14 @@
       state: started
   - name: Create firewall rule for apache service
     firewalld:
-      service: httpd
+      service: http
+      zone: public
+      permanent: yes
+      immediate: yes
+      state: enabled
+  - name: Create firewall rule for apache service
+    firewalld:
+      service: https
       zone: public
       permanent: yes
       immediate: yes

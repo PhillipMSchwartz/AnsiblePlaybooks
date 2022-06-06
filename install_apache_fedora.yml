@@ -16,6 +16,7 @@
     firewalld:
       service: http
       zone: public
+      port: 80/tcp
       permanent: yes
       immediate: yes
       state: enabled

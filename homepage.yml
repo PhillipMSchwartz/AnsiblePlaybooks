@@ -1,3 +1,4 @@
+---
 - hosts: NewHomepage
   tasks:
   - name: “Copy Files”

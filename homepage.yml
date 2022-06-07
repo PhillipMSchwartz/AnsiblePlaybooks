@@ -10,6 +10,13 @@
     service:
        name: httpd
        state: started
+  - name: Create firewall rule for apache service
+    firewalld:
+      service: http
+      zone: FedoraWorkstation
+      permanent: yes
+      immediate: yes
+      state: enabled
   handlers:
   - name: “web_restart”
     service:

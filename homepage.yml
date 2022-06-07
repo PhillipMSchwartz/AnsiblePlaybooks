@@ -3,7 +3,7 @@
   - name: “Copy Files”
     copy:
        dest: /var/www/html/
-       src: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/index.html
+       src: index.html
     notify: “web_restart”
 
   - name: “Starting Web Server”

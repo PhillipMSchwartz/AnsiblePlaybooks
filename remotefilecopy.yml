@@ -1,0 +1,10 @@
+---
+- name: Remote File copy
+  hosts: Cloud
+  gather_facts: false
+  tasks:
+    - name: copy a file remotely
+      win_get_url:
+        src: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/Fun.pdf
+        dest: C:\ansible_examples
+        remote_src: yes

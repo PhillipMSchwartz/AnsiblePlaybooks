@@ -5,6 +5,6 @@
   tasks:
     - name: copy a file remotely
       win_get_url:
-        url: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/Fun.pdf
+        url: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/Fun.png
         dest: C:\ansible_examples
         

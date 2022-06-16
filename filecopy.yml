@@ -5,6 +5,6 @@
   tasks:
     - name: copy a file
       win_copy:
-        src: C:\Source\test.txt
+        src: C:\Source\Test.txt
         dest: C:\ansible_examples
         remote_src: yes

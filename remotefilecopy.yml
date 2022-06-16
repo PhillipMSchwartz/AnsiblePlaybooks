@@ -7,4 +7,4 @@
       win_get_url:
         src: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/Fun.pdf
         dest: C:\ansible_examples
-        remote_src: yes
+        

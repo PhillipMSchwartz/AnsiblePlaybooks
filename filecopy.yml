@@ -1,0 +1,10 @@
+---
+- name: File copy
+  hosts: Cloud
+  gather_facts: false
+  tasks:
+    - name: copy a file
+      win_copy:
+        src: https://github.com/PhillipMSchwartz/AnsiblePlaybooks/blob/main/Fun.pdf
+        dest: C:\ansible_examples
+        remote_src: yes

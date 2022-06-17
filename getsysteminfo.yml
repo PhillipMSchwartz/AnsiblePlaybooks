@@ -1,5 +1,7 @@
 ---
 - name: Get System Info
-  hosts: all
+  hosts: WebServers
+  becopme: true
   gather_facts: true
+  
    

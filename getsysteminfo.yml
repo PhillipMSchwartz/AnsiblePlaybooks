@@ -1,0 +1,5 @@
+---
+- name: Get System Info
+  hosts: all
+  gather_facts: true
+   

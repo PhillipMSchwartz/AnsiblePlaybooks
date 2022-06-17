@@ -1,7 +1,7 @@
 ---
 - name: Get System Info
   hosts: WebServers
-  becopme: true
+  become: yes
   gather_facts: true
   
    

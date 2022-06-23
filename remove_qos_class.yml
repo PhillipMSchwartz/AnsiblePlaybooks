@@ -1,0 +1,8 @@
+---
+- name: Network Device management
+  hosts: NetworkDevices
+  gather_facts: false
+
+  tasks:
+  - name: Remove a class from QOS
+    ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_deleteclass VPN99 ANSIBLE001

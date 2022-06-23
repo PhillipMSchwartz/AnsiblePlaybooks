@@ -1,4 +1,7 @@
 ---
-- name: Add a class to QOS
+- name: Network Device management
   hosts: NetworkDevices
-  ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_addclass VPN99 ANSIBLE001
+
+  tasks:
+  - name: Add a class to QOS
+    ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_addclass VPN99 ANSIBLE001

@@ -1,3 +1,4 @@
 ---
 - name: Add a class to QOS
+  hosts: NetworkDevices
   ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_addclass VPN99 ANSIBLE001

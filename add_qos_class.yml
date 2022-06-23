@@ -1,6 +1,7 @@
 ---
 - name: Network Device management
   hosts: NetworkDevices
+  gather_facts: false
 
   tasks:
   - name: Add a class to QOS

@@ -1,0 +1,10 @@
+---
+- name: start ssh service
+  hosts: Cloud 
+  tasks: 
+   - name: Start ssh
+     win_service:
+
+       name: ssh-agent
+
+       state: started

@@ -1,6 +1,6 @@
 ---
 - name: change windows environment variable
-  hosts: win 
+  hosts: Cloud
   tasks:
    - name: Set an environment variable for all users
      win_environment:

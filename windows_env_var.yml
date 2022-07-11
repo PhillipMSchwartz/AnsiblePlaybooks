@@ -5,6 +5,6 @@
    - name: Set an environment variable for all users
      win_environment:
        state: present
-       name: HiAnsibleFans
-       value: New Value
+       name: Hi_Ansible_Fans
+       value: Pretty cool
        level: machine

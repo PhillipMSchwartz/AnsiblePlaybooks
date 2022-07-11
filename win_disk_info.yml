@@ -1,5 +1,6 @@
 ---
-- hosts: Cloud
+- name: Get Windows system info
+  hosts: Cloud
   tasks:
    - name: Get disk facts
      win_command: wmic cpu get caption, deviceid, name, numberofcores, maxclockspeed, status

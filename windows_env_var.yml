@@ -1,0 +1,10 @@
+---
+- name: change windows environment variable
+  hosts: win 
+  tasks:
+   - name: Set an environment variable for all users
+     win_environment:
+       state: present
+       name: HiAnsibleFans
+       value: New Value
+       level: machine

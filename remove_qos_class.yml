@@ -5,4 +5,4 @@
 
   tasks:
   - name: Remove a class from QOS
-    ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_deleteclass VPN99 ANSIBLE001
+    ansible.builtin.raw: ./kerbynet.cgi/scripts/qos_deleteclass VPN99 ANSIBLE001

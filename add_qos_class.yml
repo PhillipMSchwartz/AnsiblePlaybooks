@@ -5,4 +5,4 @@
 
   tasks:
   - name: Add a class to QOS
-    ansible.builtin.raw: ./root/kerbynet.cgi/scripts/qos_addclass VPN99 ANSIBLE001
+    ansible.builtin.raw: ./kerbynet.cgi/scripts/qos_addclass VPN99 ANSIBLE001

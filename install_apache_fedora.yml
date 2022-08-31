@@ -1,6 +1,6 @@
 ---
 - name: install and start apache
-  hosts: WebServers
+  hosts: Test
   become: yes
 
   tasks:
